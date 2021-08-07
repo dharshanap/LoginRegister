@@ -1,0 +1,57 @@
+<div>
+    
+      <form align="center" [formGroup]="registerForm">
+          <p>Complete the Registration to Enjoy Traveling</p>
+          <br><br>
+          
+          <div>
+          <label for="firstname"><b>First Name</b></label>
+          <input formControlName="firstname" type="text" name="firstname"
+          id="firstname" placeholder="Enter your First Name" required>
+          
+          </div>
+          <br><br>
+
+          <div>
+          <label for="lastname"><b>Last Name</b></label>
+          <input formControlName="lastname" type="text" name="lastname"
+          id="lastname" placeholder="Enter your Last Name" required>
+          
+          </div><br><br>
+
+          <div>
+          <label for="email"><b>Email</b></label>
+          <input formControlName="email" type="text"  name="email"
+          id="email" placeholder="Enter your valid Email"required>
+          
+          </div><br><br>
+
+
+          <div>
+          <label for="pwd"><b>Password</b></label>  
+          <input formControlName="pwd" type="password" name="pwd"
+          id="pwd"  placeholder="Enter your Password"required>  
+           
+           </div><br><br>
+
+           <div>
+          <label for="cpwd"><b>Confirm Password</b></label>
+          <input formControlName="cpwd" type="password" name="cpwd"
+          id="cpwd" placeholder="Confirm Password"required >
+          
+          </div><br><br>
+
+
+          <div>
+          <label for="contactno"><b>Contact Number</b></label>
+          <input formControlName="contactno" type="tel" name="contactno"
+          id="contactno" placeholder="Enter your Contact Number"required>
+          </div><br><br>
+
+          <div>
+              <button type="submit" [disabled]="registerForm.invalid">Register</button>
+          </div>
+
+        </form> 
+
+</div>
